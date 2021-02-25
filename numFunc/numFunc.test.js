@@ -12,7 +12,7 @@ describe("Testing the dividing function", () => {
 
   test("Should return only a number", () => {
     return mockCallback(0.001, 200).then((result) => {
-      expect(result).toBe(0.000005)
+      expect(result).toBe(0.000005);
       expect(typeof result).toBe("number");
       expect(result).not.toBe(NaN);
       expect(result).toBeGreaterThanOrEqual(0);
